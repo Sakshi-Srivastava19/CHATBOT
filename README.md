@@ -1,5 +1,5 @@
 # CHATBOT
-# 🤖 AI Chat Assistant (Streamlit App)
+#  NeuraMate: The listening soul 🤖 YOUR AI Chat Assistant - (Streamlit App)
 
 Welcome to the **AI Chat Assistant** — a smart chatbot web application built with **Streamlit**, **OpenRouter API**, and custom assistant personas like Study Assistant, Travel Guide, Therapist, Career Coach, and Friendly Chat.
 
@@ -33,12 +33,19 @@ Coming soon... (Deploy it on [Streamlit Cloud](https://share.streamlit.io)
 ## 📦 Folder Structure
 chatbot/
 ├── .devcontainer
+
 ├── .streamlit
+
 ├── .DS_store
+
 ├── .gitignore
+
 ├── README.md
+
 ├── requirements.txt
+
 ├── streamlit_app.py # Main Streamlit UI
+
 └── utils.py # API call + roles logic
 
 ---
