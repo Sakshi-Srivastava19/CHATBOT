@@ -28,7 +28,7 @@ def get_bot_response(user_input: str, role: str) -> str:
     try:
         system_prompt = BOT_PERSONAS.get(role, BOT_PERSONAS["Friendly Chat"])
         payload = {
-            "model": "mistralai/mistral-7b-instruct",
+            "model": "openai/gpt-4o",
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_input}
