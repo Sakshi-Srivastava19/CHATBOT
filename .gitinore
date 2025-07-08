@@ -1,0 +1,12 @@
+# Ignore secrets and compiled files
+.env
+.streamlit/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
+
+# Optional large data
+data/
+*.csv
