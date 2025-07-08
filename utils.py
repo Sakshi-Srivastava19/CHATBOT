@@ -7,9 +7,7 @@ load_dotenv()
 
 # Load key from Streamlit secrets or .env fallback
 API_KEY = st.secrets.get("OPENROUTER_API_KEY", os.getenv("OPENROUTER_API_KEY"))
-API_URL = "https://openrouter.ai/api/v1/chat/completions",
-
-
+API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
@@ -28,7 +26,7 @@ def get_bot_response(user_input: str, role: str) -> str:
     try:
         system_prompt = BOT_PERSONAS.get(role, BOT_PERSONAS["Friendly Chat"])
         payload = {
-            "model": "openai/gpt-4o",
+            "model": "mistralai/mistral-7b-instruct",
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_input}
