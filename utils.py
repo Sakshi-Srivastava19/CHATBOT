@@ -7,7 +7,7 @@ load_dotenv()
 
 # Load key from Streamlit secrets or .env fallback
 API_KEY = st.secrets.get("OPENROUTER_API_KEY", os.getenv("OPENROUTER_API_KEY"))
-API_URL = "https://openrouter.ai/v1/chat/completions"
+API_URL = "https://openrouter.ai//api/v1/chat/completions"
 
 
 HEADERS = {
